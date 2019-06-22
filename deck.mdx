@@ -1,0 +1,47 @@
+export { default as theme } from './Theme';
+import { Image } from 'mdx-deck';
+
+# Unit Testing :sunglasses:
+
+---
+
+## What makes a good test?
+
+1.  Runs fast
+2.  Doesn't break often
+3.  Easy to read/understand
+4.  Good coverage to effort ratio
+    -- Aaron Abramov
+
+---
+
+## What is jest?
+
+-   Jest is a testing framework.
+
+    -   Jest will crawl your directory and look for any `.test.ts(js)` file
+
+        -   Once it finds an executable file it will run its tests
+
+        ```jsx
+        test('Some test', () => {
+            const a = 'Yo';
+            expect(a).toEqual('Yo');
+        });
+        ```
+
+    -   Provides us with assertion libraries i.e.: `expect(something).toMatch(this)`
+
+#
+
+-   Leverage jest in watch mode
+    -   Keep the console running as much as possible while in development
+    -   This will help you allow you to develop with confidence
+
+---
+
+<Image src='./assets/images/add.png' />
+
+---
+
+<Image src='./assets/images/addtest.png' />
